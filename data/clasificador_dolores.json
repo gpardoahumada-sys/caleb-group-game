@@ -1,0 +1,23 @@
+{
+	"titulo": "Clasificador de dolores",
+	"instrucciones": "Llegan quejas de clientes por la cinta. Manda cada una al área del portafolio que la resuelve, antes de que se acabe el tiempo.\n\nNo hay trampa: cada queja pertenece a una sola línea. Si dudas, pregúntate qué se contrata para arreglarla, no qué tecnología suena más moderna.",
+	"segundos_por_documento": 8.0,
+	"areas": [
+		{"id": "digital", "texto": "Transformación digital y desarrollo a medida"},
+		{"id": "datos", "texto": "Gobierno de datos, analítica e IA"},
+		{"id": "cloud", "texto": "Cloud, modernización y ciberseguridad"},
+		{"id": "gestion", "texto": "Servicios gestionados y células ágiles"}
+	],
+	"documentos": [
+		{"texto": "«Perdemos clientes porque la app móvil tarda muchísimo en abrir.»", "area": "digital"},
+		{"texto": "«Cada área da una cifra distinta de ventas y no hay reportes en tiempo real.»", "area": "datos"},
+		{"texto": "«La plataforma se cae cada día de pago y no sabemos por qué.»", "area": "cloud"},
+		{"texto": "«El equipo interno no da abasto para operar el servicio 24/7.»", "area": "gestion"},
+		{"texto": "«La web vende stock que ya no existe en el almacén.»", "area": "datos"},
+		{"texto": "«Tenemos sistemas antiguos expuestos a la red interna y sin parches.»", "area": "cloud"},
+		{"texto": "«Queremos nuestro propio portal de clientes y no tenemos equipo para construirlo.»", "area": "digital"},
+		{"texto": "«Tres proveedores que no se hablan entre sí y nadie responde de la entrega.»", "area": "gestion"}
+	],
+	"explica_ok": "Eso es clasificar bien: cada queja tiene un dueño, y el cliente no tiene que saber cuál es. Ese es justo el trabajo del consultor.",
+	"explica_mal": "Alguna queja se fue al área equivocada. Fíjate en el verbo de la queja: construir algo nuevo (digital), unificar y medir (datos), sostener y proteger lo que ya hay (cloud), o poner a alguien a responder por el servicio (gestionado)."
+}

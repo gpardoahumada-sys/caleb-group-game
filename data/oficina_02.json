@@ -1,0 +1,122 @@
+{
+	"nombre": "Oficina 2 · Centro de Oferta y Metodología",
+	"mundo": [1280, 720],
+	"inicio": [250, 580],
+	"suelo": "suelo_oficina.png",
+	"insignia": "catalogo",
+	"objetivo_hecho": "sube a la Oficina 3 en el ascensor",
+
+	"alfombras": [
+		{"arte": "alfombra_pequena.png", "pos": [640, 505]}
+	],
+
+	"muros": [
+		{"rect": [0, 0, 1280, 64], "lado": "arriba"},
+		{"rect": [0, 656, 1280, 64], "lado": "abajo"},
+		{"rect": [0, 0, 64, 720], "lado": "izquierda"},
+		{"rect": [1216, 0, 64, 720], "lado": "derecha"}
+	],
+
+	"npcs": [
+		{
+			"id": "analista",
+			"arte": "npc_mayor.png",
+			"pos": [600, 300],
+			"mira": [600, 220],
+			"radio": 120,
+			"verbo": "Hablar",
+			"titulo": "Analista de datos",
+			"texto": "«Llevo tres años peleándome con los silos. Comercial tiene a un cliente con tres identificadores distintos y Operaciones otro; cuando pides un informe, cada área te da una cifra y nadie sabe cuál es la buena.»\n\n[b]Lo que pide[/b]\nUna capa de datos común, no otro tablero encima del caos.\n\n[i]Es la primera conversación de cualquier venta de datos: la pregunta de negocio antes que la herramienta.[/i]"
+		},
+		{"id": "paseante_1", "arte": "npc_verde.png", "pos": [170, 600],
+			"pasea": [[170, 320], [170, 600]], "velocidad": 50},
+		{"id": "paseante_2", "arte": "npc_granate.png", "pos": [700, 620],
+			"pasea": [[1010, 620], [700, 620]], "velocidad": 44}
+	],
+
+	"objetos": [
+		{
+			"id": "ascensor",
+			"arte": "ascensor.png",
+			"pos": [190, 150],
+			"puerta": true,
+			"insignia": "catalogo",
+			"ir_a": "res://scenes/building/oficina_03.tscn",
+			"verbo": "Subir",
+			"radio": 128,
+			"titulo": "Ascensor · Oficina 3",
+			"texto_bloqueado": "El ascensor no responde: [b]CATÁLOGO PENDIENTE[/b].\n\nPara subir necesitas el [b]Catálogo Comercial de Bolsillo[/b], y para eso te falta consultar {faltan}.",
+			"texto_abierto": "[b]Oficina 3 · Laboratorio de Soluciones y Casos de Éxito[/b]\n\nEste piso todavía no está construido: es el siguiente hito del plan. El ascensor ya te llevaría, pero todavía no hay a dónde."
+		},
+		{
+			"id": "terminal_1",
+			"arte": "terminal.png",
+			"pos": [380, 210],
+			"col": [80, 26],
+			"radio": 104,
+			"verbo": "Consultar",
+			"titulo": "1 · Transformación digital y desarrollo a medida",
+			"texto": "[b]QUÉ ES[/b]\nSoftware hecho para el negocio del cliente: portales, apps, integraciones y sistemas propios. Aquí el software [i]es[/i] el negocio, no una herramienta de apoyo.\n\n[b]CÓMO SE VENDE[/b]\nEmpieza con un discovery corto: quién usa qué, qué se rompe hoy y cuánto cuesta que se rompa.\n\n[b]CÓMO SE COBRA[/b]\n· [b]Precio cerrado[/b] cuando el alcance está definido y estable.\n· [b]Horas bolsa[/b] cuando el alcance se va a ir descubriendo.\n· [b]Célula dedicada[/b] cuando el producto no termina nunca: evoluciona.\n\n[b]CUÁNDO NO[/b]\nSi el cliente solo quiere «una web», probablemente no necesita una transformación digital. No sobredimensiones: es la forma más rápida de perder la confianza."
+		},
+		{
+			"id": "terminal_2",
+			"arte": "terminal.png",
+			"pos": [600, 210],
+			"col": [80, 26],
+			"radio": 104,
+			"verbo": "Consultar",
+			"titulo": "2 · Gobierno de datos, analítica e IA",
+			"texto": "[b]QUÉ ES[/b]\nUnificar los datos que hoy viven en silos, con reglas de calidad y de quién puede ver qué, para que las decisiones se tomen con números y no con la última hoja de cálculo que llegó por correo.\n\n[b]QUÉ DUELE[/b]\n· El mismo cliente con tres identificadores distintos en tres áreas.\n· Reportería regulatoria hecha a mano cada mes.\n· Un modelo de IA que nadie puede auditar porque los datos no tienen linaje.\n\n[b]CÓMO SE VENDE[/b]\nNunca empieces por la IA. Empieza por la pregunta de negocio (¿cuánto vendimos ayer en todas las tiendas?) y llega a la IA solo si los datos ya están en condiciones.\n\n[b]CÓMO SE COBRA[/b]\nServicio gestionado mensual cuando hay que sostenerlo; horas bolsa para un primer tablero."
+		},
+		{
+			"id": "terminal_3",
+			"arte": "terminal.png",
+			"pos": [820, 210],
+			"col": [80, 26],
+			"radio": 104,
+			"verbo": "Consultar",
+			"titulo": "3 · Infraestructura cloud, modernización y ciberseguridad",
+			"texto": "[b]QUÉ ES[/b]\nLlevar la plataforma a la nube sin parar el negocio, modernizar lo que ya no aguanta y cerrar los agujeros por los que se puede entrar.\n\n[b]LA REGLA DE ORO[/b]\nModernización [b]incremental[/b] y por servicios, empezando por los de más riesgo. «Rehacerlo todo desde cero» suena ambicioso y es la forma más cara de quedarse sin sistema seis meses.\n\n[b]QUÉ DUELE[/b]\n· Caídas en los días de más tráfico, justo cuando el negocio se juega el mes.\n· Sistemas antiguos expuestos a la red interna y sin parches.\n· Nadie sabe qué pasa si se cae el centro de datos principal.\n\n[b]CÓMO SE COBRA[/b]\nEquipo dedicado para la migración; servicio gestionado con SLA para el día a día; auditoría con precio cerrado."
+		},
+		{
+			"id": "terminal_4",
+			"arte": "terminal.png",
+			"pos": [1040, 210],
+			"col": [80, 26],
+			"radio": 104,
+			"verbo": "Consultar",
+			"titulo": "4 · Servicios gestionados, staffing y células ágiles",
+			"texto": "[b]TRES COSAS DISTINTAS[/b]\n· [b]Servicios gestionados[/b]: nosotros operamos y respondemos por el servicio, con SLA. El cliente deja de tener el problema.\n· [b]Staffing estratégico[/b]: perfiles concretos que se integran en el equipo del cliente. Se cobra el perfil.\n· [b]Célula ágil[/b]: un equipo autogestionado con un objetivo y responsabilidad de extremo a extremo. Se contrata el [i]resultado[/i], no las manos.\n\n[b]LA PREGUNTA DEL CLIENTE[/b]\n«¿Por qué una célula y no programadores sueltos?»\nPorque un programador suelto no responde de la entrega. La célula decide, se organiza y entrega; el cliente pone las prioridades, no la coordinación diaria.\n\n[b]CÓMO SE COBRA[/b]\nEquipo dedicado o retainer mensual; nunca por hora suelta si se está vendiendo un resultado."
+		},
+		{
+			"id": "clasificador",
+			"arte": "puesto_reto.png",
+			"pos": [330, 520],
+			"col": [110, 40],
+			"radio": 130,
+			"verbo": "Abrir el clasificador",
+			"titulo": "Clasificador de Dolores",
+			"trivia": "res://data/clasificador_dolores.json",
+			"clave": "clasificador",
+			"motor": "clasificador"
+		},
+		{
+			"id": "trivia",
+			"arte": "puesto_reto.png",
+			"pos": [950, 520],
+			"col": [110, 40],
+			"radio": 130,
+			"verbo": "Hacer la trivia",
+			"titulo": "Trivia de portafolio",
+			"trivia": "res://data/trivia_catalogo.json",
+			"clave": "trivia_catalogo"
+		},
+
+		{"id": "escritorio_1", "arte": "escritorio.png", "pos": [1120, 300], "col": [176, 44]},
+		{"id": "escritorio_2", "arte": "escritorio.png", "pos": [1120, 500], "col": [176, 44]},
+		{"id": "planta_1", "arte": "planta.png", "pos": [110, 150], "col": [36, 26]},
+		{"id": "planta_2", "arte": "planta.png", "pos": [1170, 150], "col": [36, 26]},
+		{"id": "planta_3", "arte": "planta.png", "pos": [110, 600], "col": [36, 26]},
+		{"id": "planta_4", "arte": "planta.png", "pos": [1170, 600], "col": [36, 26]}
+	]
+}

@@ -1,0 +1,93 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/arrastrar.gd" id="1_guion"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_caja"]
+bg_color = Color(0.094, 0.121, 0.161, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.83, 0.635, 0.29, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[node name="Arrastrar" type="CanvasLayer"]
+layer = 26
+script = ExtResource("1_guion")
+
+[node name="Veladura" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.022, 0.031, 0.045, 0.93)
+
+[node name="Marco" type="PanelContainer" parent="Veladura"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -540.0
+offset_right = 540.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_caja")
+
+[node name="Margen" type="MarginContainer" parent="Veladura/Marco"]
+layout_mode = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 22
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 18
+
+[node name="Columnas" type="VBoxContainer" parent="Veladura/Marco/Margen"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Cabecera" type="Label" parent="Veladura/Marco/Margen/Columnas"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.83, 0.635, 0.29, 1)
+theme_override_font_sizes/font_size = 19
+text = "MINIJUEGO"
+
+[node name="Instrucciones" type="Label" parent="Veladura/Marco/Margen/Columnas"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.78, 0.82, 0.88, 1)
+theme_override_font_sizes/font_size = 14
+text = "Instrucciones"
+autowrap_mode = 3
+
+[node name="Cuerpo" type="HBoxContainer" parent="Veladura/Marco/Margen/Columnas"]
+custom_minimum_size = Vector2(0, 330)
+layout_mode = 2
+theme_override_constants/separation = 26
+
+[node name="Izquierda" type="VBoxContainer" parent="Veladura/Marco/Margen/Columnas/Cuerpo"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 8
+
+[node name="Derecha" type="VBoxContainer" parent="Veladura/Marco/Margen/Columnas/Cuerpo"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 10
+
+[node name="Explicacion" type="Label" parent="Veladura/Marco/Margen/Columnas"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.83, 0.635, 0.29, 1)
+theme_override_font_sizes/font_size = 15
+autowrap_mode = 3
+visible = false
+
+[node name="Pie" type="Label" parent="Veladura/Marco/Margen/Columnas"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.58, 0.64, 0.72, 1)
+theme_override_font_sizes/font_size = 13
+text = "arrastra cada pieza a su sitio"
+horizontal_alignment = 2

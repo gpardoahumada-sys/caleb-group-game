@@ -1,0 +1,98 @@
+{
+	"nombre": "Oficina 3 · Casos de éxito y propuestas",
+	"mundo": [1280, 720],
+	"inicio": [250, 560],
+	"suelo": "suelo_oficina.png",
+	"insignia": "casos",
+	"objetivo_hecho": "sube a la Oficina 4 en el ascensor",
+
+	"alfombras": [
+		{"arte": "alfombra_pequena.png", "pos": [640, 545]}
+	],
+
+	"muros": [
+		{"rect": [0, 0, 1280, 64], "lado": "arriba"},
+		{"rect": [0, 656, 1280, 64], "lado": "abajo"},
+		{"rect": [0, 0, 64, 720], "lado": "izquierda"},
+		{"rect": [1216, 0, 64, 720], "lado": "derecha"}
+	],
+
+	"npcs": [
+		{
+			"id": "preventa",
+			"arte": "npc_verde.png",
+			"pos": [1120, 300],
+			"mira": [900, 260],
+			"radio": 118,
+			"verbo": "Hablar",
+			"titulo": "Preventa · «los casos se cuentan con números»",
+			"texto": "«Cuando un cliente pregunta si sabemos hacerlo, la respuesta no es un sí: es un caso. Y un caso con una cifra delante.»\n\n[b]Cómo se cuenta[/b]\nPrimero el dolor, después lo que se hizo, y al final el número. Al revés no se escucha: «redujimos un 40%» sin decir el 40% de qué no significa nada.\n\n[i]Los tres casos del mural están contados así. Léelos en ese orden.[/i]"
+		},
+		{"id": "paseante_1", "arte": "npc_granate.png", "pos": [300, 330],
+			"pasea": [[300, 570], [300, 330]], "velocidad": 48}
+	],
+
+	"objetos": [
+		{
+			"id": "ascensor",
+			"arte": "ascensor.png",
+			"pos": [190, 150],
+			"puerta": true,
+			"insignia": "casos",
+			"ir_a": "res://scenes/building/oficina_04.tscn",
+			"verbo": "Subir",
+			"radio": 128,
+			"titulo": "Ascensor · Oficina 4",
+			"texto_bloqueado": "El ascensor no responde: [b]COMITÉ PENDIENTE[/b].\n\nPara subir necesitas la insignia del piso, y para eso te falta {faltan}.",
+			"texto_abierto": "Las puertas se abren a la última planta."
+		},
+		{
+			"id": "caso_1",
+			"arte": "pantalla.png",
+			"tinte": "#4a80d0",
+			"pos": [360, 210],
+			"radio": 108,
+			"verbo": "Leer el caso",
+			"titulo": "Caso 1 · Banca y finanzas",
+			"texto": "[b]EL DOLOR[/b]\nUn banco con caídas recurrentes en días de pago: tres horas fuera en el peor día del mes, con la mitad del país mirando.\n\n[b]LO QUE SE HIZO[/b]\nAutomatización del despliegue y una arquitectura resiliente por servicios, sin parar la operación. Nada de big bang: se migró por partes, empezando por el motor de pagos.\n\n[b]EL NÚMERO[/b]\n[b]40% menos tiempo de respuesta[/b] y las caídas en día de pago dejan de ser noticia.\n\n[i]Este es el caso que se cuenta cuando el cliente dice «somos más caros».[/i]"
+		},
+		{
+			"id": "caso_2",
+			"arte": "pantalla.png",
+			"tinte": "#3fa668",
+			"pos": [640, 210],
+			"radio": 108,
+			"verbo": "Leer el caso",
+			"titulo": "Caso 2 · Retail y logística",
+			"texto": "[b]EL DOLOR[/b]\nCadena de tiendas con web y tienda física desincronizadas. En las campañas masivas la logística colapsa y el portal muestra stock que no existe.\n\n[b]LO QUE SE HIZO[/b]\nUna plataforma unificada de datos con trazabilidad de inventario en tiempo real: una sola cifra de stock para la web, el centro de distribución y la tienda.\n\n[b]EL NÚMERO[/b]\n[b]Stock falso a cero en campaña[/b] y los pedidos comprometidos dejan de cancelarse.\n\n[i]Aquí la venta no fue de software: fue de una sola verdad sobre el inventario.[/i]"
+		},
+		{
+			"id": "caso_3",
+			"arte": "pantalla.png",
+			"tinte": "#c85a4a",
+			"pos": [920, 210],
+			"radio": 108,
+			"verbo": "Leer el caso",
+			"titulo": "Caso 3 · Salud y servicios clínicos",
+			"texto": "[b]EL DOLOR[/b]\nRed de clínicas con fichas clínicas que no se hablan entre sí, filas en admisiones y riesgo real de filtración de datos de pacientes.\n\n[b]LO QUE SE HIZO[/b]\nUna célula ágil con desarrollo seguro y cumplimiento normativo desde el primer día: auditoría en cada ciclo, cifrado y control de accesos, no al final del proyecto.\n\n[b]EL NÚMERO[/b]\n[b]Cero hallazgos críticos[/b] en la auditoría posterior, y el personal clínico adopta el portal porque le ahorra minutos por paciente.\n\n[i]Es el caso que desactiva el miedo del CISO: no se promete seguridad, se demuestra en cada entrega.[/i]"
+		},
+		{
+			"id": "propuesta",
+			"arte": "puesto_reto.png",
+			"pos": [640, 520],
+			"col": [110, 40],
+			"radio": 132,
+			"verbo": "Armar la propuesta",
+			"titulo": "Constructor de propuestas",
+			"trivia": "res://data/propuesta.json",
+			"clave": "propuesta",
+			"motor": "propuesta"
+		},
+
+		{"id": "escritorio_1", "arte": "escritorio.png", "pos": [1120, 470], "col": [176, 44]},
+		{"id": "planta_1", "arte": "planta.png", "pos": [110, 150], "col": [36, 26]},
+		{"id": "planta_2", "arte": "planta.png", "pos": [1170, 150], "col": [36, 26]},
+		{"id": "planta_3", "arte": "planta.png", "pos": [110, 600], "col": [36, 26]},
+		{"id": "planta_4", "arte": "planta.png", "pos": [1170, 600], "col": [36, 26]}
+	]
+}

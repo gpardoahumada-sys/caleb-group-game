@@ -1,0 +1,174 @@
+{
+	"titulo": "Pitch ante el comité",
+	"inicio": "r1",
+	"maximo": 12,
+	"nota_precio": "En cuanto ofreces descuento, la conversación deja de ser sobre valor y pasa a ser sobre precio. Ahí ya no se gana: el comité apunta que el margen era negociable y el resto de la reunión lo dedicas a defender lo que acabas de regalar.",
+	"nota_ok": "Defendiste el precio con el coste del problema, no con adjetivos; explicaste la diferencia entre un squad y unas manos; no prometiste lo que no se puede prometer y ordenaste el alcance. Eso es lo que compra un comité.",
+	"nota_mal": "No bajaste el precio, pero alguna respuesta fue de relleno: «somos mejores» o «sale más barato» no son argumentos que un director pueda llevar a su hoja de cálculo. La próxima vez, pon el coste del problema al lado del coste de la solución.",
+	"nodos": {
+		"r1": {
+			"quien": "Gerente General",
+			"texto": "«Antes de nada: somos más caros que la competencia. ¿Por qué deberíamos pagar eso?»",
+			"opciones": [
+				{
+					"texto": "Porque el coste no son las horas: es lo que le cuesta al negocio esperar seis meses a que el otro proveedor entienda su operación.",
+					"puntos": 3,
+					"va_a": "r2"
+				},
+				{
+					"texto": "Porque nuestro equipo es el mejor del mercado y tenemos más certificaciones.",
+					"puntos": 1,
+					"va_a": "r1b"
+				},
+				{
+					"texto": "Podemos igualar el precio de la competencia si firmamos esta semana.",
+					"puntos": 0,
+					"precio": true,
+					"va_a": "trampa"
+				}
+			]
+		},
+		"r1b": {
+			"quien": "Gerente General",
+			"texto": "««Somos los mejores» no me sirve: eso lo dice todo el mundo. Deme un número que pueda llevar a mi consejo.»",
+			"opciones": [
+				{
+					"texto": "Una caída de tres horas en un día de pago cuesta más que la diferencia anual entre ustedes y nosotros. Ese es el número.",
+					"puntos": 2,
+					"va_a": "r2"
+				},
+				{
+					"texto": "No tengo la cifra exacta, pero nuestros clientes están muy contentos.",
+					"puntos": 1,
+					"va_a": "r2"
+				},
+				{
+					"texto": "Si el número es el problema, le dejo un 10% de descuento.",
+					"puntos": 0,
+					"precio": true,
+					"va_a": "trampa"
+				}
+			]
+		},
+		"r2": {
+			"quien": "Director de Operaciones",
+			"texto": "«¿Y por qué un squad en vez de contratar programadores directos? Así no pago intermediarios.»",
+			"opciones": [
+				{
+					"texto": "Porque un programador suelto no responde por la entrega y una célula sí: usted pone las prioridades, nosotros respondemos del resultado completo.",
+					"puntos": 3,
+					"va_a": "r3"
+				},
+				{
+					"texto": "Porque contratar y formar un equipo propio sale más caro que traer el nuestro.",
+					"puntos": 1,
+					"va_a": "r2b"
+				},
+				{
+					"texto": "Le paso los perfiles por hora y usted los gestiona como quiera.",
+					"puntos": 0,
+					"precio": true,
+					"va_a": "trampa"
+				}
+			]
+		},
+		"r2b": {
+			"quien": "Director de Operaciones",
+			"texto": "««Más barato» me lo dijo el proveedor anterior. Y cuando no entregaron, no había nadie al otro lado del teléfono.»",
+			"opciones": [
+				{
+					"texto": "Exacto: ahí está la diferencia. Nosotros ponemos un equipo con nombre y objetivo que responde; con perfiles sueltos, la responsabilidad de la entrega se queda en su casa.",
+					"puntos": 2,
+					"va_a": "r3"
+				},
+				{
+					"texto": "Le aseguro que con nosotros eso no pasará.",
+					"puntos": 1,
+					"va_a": "r3"
+				},
+				{
+					"texto": "Si le preocupa el riesgo, le bajo la tarifa por hora.",
+					"puntos": 0,
+					"precio": true,
+					"va_a": "trampa"
+				}
+			]
+		},
+		"r3": {
+			"quien": "Directora de Finanzas",
+			"texto": "«El año pasado un proveedor nos prometió exactamente esto y nos dejó a medias. ¿Qué me garantiza a mí que ustedes no?»",
+			"opciones": [
+				{
+					"texto": "Nada garantiza el futuro. Lo que sí puedo es darle entregas cada dos semanas desde el primer mes, y usted corta cuando quiera.",
+					"puntos": 3,
+					"va_a": "r4"
+				},
+				{
+					"texto": "Le firmo un contrato con penalizaciones del 20% por retraso.",
+					"puntos": 1,
+					"va_a": "r3b"
+				},
+				{
+					"texto": "Para compensar el riesgo, le hago un descuento de entrada.",
+					"puntos": 0,
+					"precio": true,
+					"va_a": "trampa"
+				}
+			]
+		},
+		"r3b": {
+			"quien": "Directora de Finanzas",
+			"texto": "«Las penalizaciones suenan bien en el papel. Pero el año pasado también las teníamos, y el daño ya estaba hecho cuando las cobramos.»",
+			"opciones": [
+				{
+					"texto": "Por eso propongo que el riesgo se vea pronto y no al final: entregas cada dos semanas; si en la cuarta no le convence, para. El control es suyo, no del contrato.",
+					"puntos": 2,
+					"va_a": "r4"
+				},
+				{
+					"texto": "Podemos subir la penalización al 30%.",
+					"puntos": 1,
+					"va_a": "r4"
+				},
+				{
+					"texto": "Le dejo el primer mes sin coste para que lo compruebe.",
+					"puntos": 0,
+					"precio": true,
+					"va_a": "trampa"
+				}
+			]
+		},
+		"r4": {
+			"quien": "Gerente General",
+			"texto": "«Última pregunta: si el proyecto se complica y hay que recortar, ¿qué sacrificamos?»",
+			"opciones": [
+				{
+					"texto": "El alcance, nunca la calidad ni el equipo. Recortamos módulos, no personas ni pruebas.",
+					"puntos": 3,
+					"va_a": ""
+				},
+				{
+					"texto": "Lo que ustedes digan; para eso estamos.",
+					"puntos": 1,
+					"va_a": ""
+				},
+				{
+					"texto": "Los testeos, para llegar a la fecha acordada.",
+					"puntos": 0,
+					"va_a": ""
+				}
+			]
+		},
+		"trampa": {
+			"quien": "Gerente General",
+			"texto": "«Ah. Entonces el precio era negociable.»\n\nSe miran entre ellos. La Directora de Finanzas ya está escribiendo algo en su libreta.",
+			"opciones": [
+				{
+					"texto": "…",
+					"puntos": 0,
+					"va_a": ""
+				}
+			]
+		}
+	}
+}

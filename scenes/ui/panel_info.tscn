@@ -1,0 +1,87 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/panel_info.gd" id="1_guion"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_caja"]
+bg_color = Color(0.094, 0.121, 0.161, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.83, 0.635, 0.29, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[node name="PanelInfo" type="CanvasLayer"]
+layer = 20
+script = ExtResource("1_guion")
+
+[node name="Veladura" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.027, 0.039, 0.055, 0.86)
+
+[node name="Marco" type="PanelContainer" parent="Veladura"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -540.0
+offset_top = 0.0
+offset_right = 540.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_caja")
+
+[node name="Margen" type="MarginContainer" parent="Veladura/Marco"]
+layout_mode = 2
+theme_override_constants/margin_left = 34
+theme_override_constants/margin_top = 22
+theme_override_constants/margin_right = 34
+theme_override_constants/margin_bottom = 18
+
+[node name="Columnas" type="VBoxContainer" parent="Veladura/Marco/Margen"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Titulo" type="Label" parent="Veladura/Marco/Margen/Columnas"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.83, 0.635, 0.29, 1)
+theme_override_font_sizes/font_size = 27
+text = "Título"
+
+[node name="Linea" type="ColorRect" parent="Veladura/Marco/Margen/Columnas"]
+custom_minimum_size = Vector2(0, 2)
+layout_mode = 2
+color = Color(0.83, 0.635, 0.29, 0.45)
+
+[node name="Cuerpo" type="RichTextLabel" parent="Veladura/Marco/Margen/Columnas"]
+layout_mode = 2
+theme_override_colors/default_color = Color(0.89, 0.916, 0.949, 1)
+theme_override_font_sizes/normal_font_size = 14
+theme_override_font_sizes/bold_font_size = 14
+bbcode_enabled = true
+text = ""
+fit_content = true
+
+[node name="Mas" type="Label" parent="Veladura/Marco/Margen/Columnas"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.83, 0.635, 0.29, 0.8)
+theme_override_font_sizes/font_size = 13
+text = "▼  hay más — rueda del ratón o flechas"
+horizontal_alignment = 2
+visible = false
+
+[node name="Pie" type="Label" parent="Veladura/Marco/Margen/Columnas"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.58, 0.64, 0.72, 1)
+theme_override_font_sizes/font_size = 15
+text = "[E] o [Esc] para cerrar"
+horizontal_alignment = 2

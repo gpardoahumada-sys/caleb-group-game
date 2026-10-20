@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_guion"]
+[ext_resource type="Texture2D" path="res://art/player_hoja.png" id="2_hoja"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cuerpo"]
+radius = 13.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_zona"]
+radius = 72.0
+
+[node name="Player" type="CharacterBody2D"]
+collision_layer = 1
+collision_mask = 1
+script = ExtResource("1_guion")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+position = Vector2(0, -32)
+scale = Vector2(2, 2)
+texture = ExtResource("2_hoja")
+hframes = 7
+vframes = 5
+
+[node name="Colision" type="CollisionShape2D" parent="."]
+position = Vector2(0, -10)
+shape = SubResource("CircleShape2D_cuerpo")
+
+[node name="Zona" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="Forma" type="CollisionShape2D" parent="Zona"]
+position = Vector2(0, -18)
+shape = SubResource("CircleShape2D_zona")
+
+[node name="Camara" type="Camera2D" parent="."]
+position = Vector2(0, -24)

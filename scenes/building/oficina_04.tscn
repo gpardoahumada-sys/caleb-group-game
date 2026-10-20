@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/nivel.gd" id="1_nivel"]
+[ext_resource type="PackedScene" path="res://scenes/ui/hud.tscn" id="2_hud"]
+[ext_resource type="PackedScene" path="res://scenes/ui/panel_info.tscn" id="3_panel"]
+[ext_resource type="PackedScene" path="res://scenes/minijuegos/comite.tscn" id="4_comite"]
+
+[node name="Oficina04" type="Node2D"]
+script = ExtResource("1_nivel")
+plano = "res://data/oficina_04.json"
+
+[node name="Fondo" type="Node2D" parent="."]
+
+[node name="Entidades" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="HUD" parent="." instance=ExtResource("2_hud")]
+
+[node name="PanelInfo" parent="." instance=ExtResource("3_panel")]
+
+[node name="Comite" parent="." instance=ExtResource("4_comite")]

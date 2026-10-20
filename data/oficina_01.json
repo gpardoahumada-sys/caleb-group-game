@@ -1,0 +1,287 @@
+{
+	"nombre": "Oficina 1 · Recepción y Cultura Caleb Group",
+	"mundo": [
+		1280,
+		720
+	],
+	"inicio": [
+		620,
+		380
+	],
+	"suelo": "suelo_oficina.png",
+	"insignia": "identidad",
+	"objetivo_hecho": "sube a la Oficina 2 en el ascensor",
+	"alfombras": [
+		{
+			"arte": "alfombra.png",
+			"pos": [
+				300,
+				370
+			]
+		}
+	],
+	"muros": [
+		{
+			"rect": [
+				0,
+				0,
+				1280,
+				64
+			],
+			"lado": "arriba"
+		},
+		{
+			"rect": [
+				0,
+				656,
+				1280,
+				64
+			],
+			"lado": "abajo"
+		},
+		{
+			"rect": [
+				0,
+				0,
+				64,
+				720
+			],
+			"lado": "izquierda"
+		},
+		{
+			"rect": [
+				1216,
+				0,
+				64,
+				720
+			],
+			"lado": "derecha"
+		}
+	],
+	"npcs": [
+		{
+			"id": "recepcionista",
+			"arte": "npc_ejecutivo.png",
+			"pos": [
+				300,
+				306
+			],
+			"mira": [
+				300,
+				460
+			],
+			"radio": 130,
+			"verbo": "Hablar",
+			"titulo": "Marta · Recepción",
+			"texto": "«Bienvenido a Caleb Group. Si vienes por la acreditación, empieza por la pantalla del auditorio: ahí está el ADN de la casa. Cuando la tengas, el ascensor está a tu izquierda.»\n\n[b]Lo que hace recepción[/b]\nNo filtra: orienta. Sabe quién está disponible, quién no, y a quién no conviene molestar un martes por la mañana.\n\n[i]Si te pierdes en el edificio, pregúntame.[/i]"
+		},
+		{
+			"id": "paseante_1",
+			"arte": "npc_verde.png",
+			"pos": [
+				700,
+				560
+			],
+			"pasea": [
+				[
+					700,
+					300
+				],
+				[
+					700,
+					560
+				]
+			],
+			"velocidad": 52
+		},
+		{
+			"id": "paseante_2",
+			"arte": "npc_granate.png",
+			"pos": [
+				300,
+				620
+			],
+			"pasea": [
+				[
+					560,
+					620
+				],
+				[
+					300,
+					620
+				]
+			],
+			"velocidad": 46
+		}
+	],
+	"objetos": [
+		{
+			"id": "ascensor",
+			"arte": "ascensor.png",
+			"pos": [
+				190,
+				150
+			],
+			"puerta": true,
+			"insignia": "identidad",
+			"ir_a": "res://scenes/building/oficina_02.tscn",
+			"verbo": "Subir",
+			"radio": 128,
+			"titulo": "Ascensor · Oficina 2",
+			"texto_bloqueado": "El ascensor no responde: en el panel pone [b]ACREDITACIÓN PENDIENTE[/b].\n\nPara subir necesitas la [b]Insignia de Identidad[/b], y para eso te falta consultar {faltan}.",
+			"texto_abierto": "El panel se pone en verde y las puertas se abren.\n\n[b]Oficina 2 · Centro de Oferta y Metodología Comercial[/b]\n\nEste piso todavía no está construido: es el siguiente hito del plan. La puerta ya funciona, que es lo que hacía falta comprobar."
+		},
+		{
+			"id": "pantalla",
+			"arte": "pantalla.png",
+			"pos": [
+				700,
+				214
+			],
+			"radio": 124,
+			"verbo": "Ver el panel",
+			"titulo": "El ADN Caleb Group",
+			"texto": "[b]PROPÓSITO[/b]\nConvertir la tecnología en una ventaja que se pueda medir. No vendemos horas de desarrollo: vendemos que el negocio del cliente funcione mejor.\n\n[b]VISIÓN[/b]\nSer el socio de transformación digital de referencia en la región: el que llega cuando el sistema ya no aguanta, y el que se queda cuando hay que sostenerlo.\n\n[b]HISTORIA[/b]\nCaleb Group empezó como una célula de tres personas resolviendo integraciones para un solo banco. No hubo ronda de inversión ni una gran estrategia: hubo clientes que volvieron. La estructura de hoy -preventa, arquitectura, delivery, finanzas y legal- es lo que quedó después de que un proyecto grande casi se rompiera por no tener a nadie mirando el contrato.\n\n[b]COBERTURA[/b]\nOficinas en tres países y equipos distribuidos. Un cliente puede tener la preventa en una ciudad y la célula de desarrollo en otra: el modelo está pensado para eso.\n\n[b]MODELO DE TRABAJO[/b]\nCuatro dimensiones que se recorren en este edificio antes de salir a la calle:\n  1. Cultura y estructura de soporte comercial  —  este piso\n  2. Oferta, metodología y valor  —  Oficina 2\n  3. Casos de éxito y armado de propuestas  —  Oficina 3\n  4. Comité comercial: el pitch de acreditación  —  Oficina 4\n\n[i]Al terminar los cuatro pisos recibes la Acreditación Comercial de Terreno.[/i]"
+		},
+		{
+			"id": "recepcion",
+			"arte": "mostrador.png",
+			"pos": [
+				300,
+				410
+			],
+			"col": [
+				280,
+				56
+			],
+			"radio": 122,
+			"verbo": "Hablar",
+			"titulo": "Recepción: a quién acudir en cada venta",
+			"texto": "La recepción de Caleb Group no es un filtro: es la puerta al equipo que hace posible una venta. Estos son los cinco perfiles que vas a necesitar, y el momento en que entra cada uno.\n\n[b]PREVENTA[/b]  —  arma la propuesta técnica y la solución antes de que exista un contrato. Entra en la primera reunión seria.\n\n[b]ARQUITECTURA[/b]  —  valida que lo que prometes se puede construir. Entra cuando el cliente pregunta «¿y cómo lo harían?».\n\n[b]DELIVERY[/b]  —  el que entrega. Entra al cerrar: lo que prometas condiciona su vida durante meses.\n\n[b]FINANZAS[/b]  —  modelo de cobro: horas bolsa, precio cerrado o equipos dedicados. Entra en cuanto hay cifras sobre la mesa.\n\n[b]LEGAL[/b]  —  contratos, datos personales, confidencialidad en salud y banca. Entra antes de firmar, no después.\n\n[i]En la Oficina 2 tendrás que colocarlos tú en el organigrama. Aquí solo se trata de saber que existen.[/i]"
+		},
+		{
+			"id": "salida",
+			"arte": "puerta_cristal.png",
+			"pos": [
+				760,
+				656
+			],
+			"puerta": true,
+			"insignia": "acreditacion",
+			"verbo": "Salir",
+			"radio": 116,
+			"titulo": "Salida a la calle",
+			"texto_bloqueado": "Seguridad te corta el paso con una mano en el pecho.\n\n«Caballero, hasta que no tenga la [b]Acreditación Comercial de Terreno[/b] no sale de la torre. Es la norma del edificio, no mía.»\n\n[i]La acreditación se consigue en la Oficina 4, en el Comité Comercial.[/i]",
+			"texto_abierto": "Las puertas de cristal se abren y entra el ruido de la avenida. Llevas la Acreditación, la [b]Llave del Auto Corporativo[/b] en el bolsillo y tres clientes esperando fuera.\n\n[i]Fin del Acto 1. La ciudad, los clientes y sus árboles de diálogo son el Acto 2.[/i]",
+			"ir_a": "res://scenes/ciudad/ciudad.tscn"
+		},
+		{
+			"id": "mapa_aliados",
+			"arte": "puesto_reto.png",
+			"pos": [
+				520,
+				590
+			],
+			"col": [
+				110,
+				40
+			],
+			"radio": 132,
+			"verbo": "Abrir el organigrama",
+			"titulo": "El Mapa de Aliados",
+			"trivia": "res://data/mapa_aliados.json",
+			"clave": "mapa_aliados",
+			"motor": "arrastrar"
+		},
+		{
+			"id": "trivia_cultura",
+			"arte": "puesto_reto.png",
+			"pos": [
+				1000,
+				590
+			],
+			"col": [
+				110,
+				40
+			],
+			"radio": 126,
+			"verbo": "Hacer la trivia",
+			"titulo": "Trivia de Cultura",
+			"trivia": "res://data/trivia_cultura.json",
+			"clave": "trivia_cultura",
+			"motor": "trivia"
+		},
+		{
+			"id": "escritorio_1",
+			"arte": "escritorio.png",
+			"pos": [
+				900,
+				300
+			],
+			"col": [
+				176,
+				44
+			]
+		},
+		{
+			"id": "escritorio_2",
+			"arte": "escritorio.png",
+			"pos": [
+				1120,
+				300
+			],
+			"col": [
+				176,
+				44
+			]
+		},
+		{
+			"id": "planta_1",
+			"arte": "planta.png",
+			"pos": [
+				110,
+				250
+			],
+			"col": [
+				36,
+				26
+			]
+		},
+		{
+			"id": "planta_2",
+			"arte": "planta.png",
+			"pos": [
+				1150,
+				150
+			],
+			"col": [
+				36,
+				26
+			]
+		},
+		{
+			"id": "planta_3",
+			"arte": "planta.png",
+			"pos": [
+				110,
+				620
+			],
+			"col": [
+				36,
+				26
+			]
+		},
+		{
+			"id": "planta_4",
+			"arte": "planta.png",
+			"pos": [
+				1170,
+				620
+			],
+			"col": [
+				36,
+				26
+			]
+		}
+	]
+}

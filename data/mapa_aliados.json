@@ -1,0 +1,22 @@
+{
+	"titulo": "El Mapa de Aliados",
+	"instrucciones": "En Caleb Group no se vende solo: cada fase de una venta tiene un dueño. Arrastra cada perfil al momento en el que entra.\n\nEs la respuesta a «¿y con quién hablo yo de esto?», que es la pregunta que más veces te van a hacer dentro y fuera de la empresa.",
+	"izquierda": "Perfiles",
+	"derecha": "En qué momento entra cada uno",
+	"huecos": [
+		{"id": "propuesta", "texto": "Diseña la solución y la propuesta técnica antes de que exista un contrato"},
+		{"id": "viable", "texto": "Comprueba que lo que se promete se puede construir de verdad"},
+		{"id": "entrega", "texto": "Entrega lo prometido y responde de los plazos"},
+		{"id": "precio", "texto": "Define el modelo de cobro: bolsa, precio cerrado o equipo dedicado"},
+		{"id": "contrato", "texto": "Revisa el contrato, los datos personales y la confidencialidad"}
+	],
+	"piezas": [
+		{"id": "preventa", "texto": "Preventa", "destino": "propuesta"},
+		{"id": "arquitectura", "texto": "Arquitectura", "destino": "viable"},
+		{"id": "delivery", "texto": "Delivery", "destino": "entrega"},
+		{"id": "finanzas", "texto": "Finanzas", "destino": "precio"},
+		{"id": "legal", "texto": "Legal", "destino": "contrato"}
+	],
+	"explica_ok": "Ese es el mapa. Cuando un cliente pregunta por algo, ya sabes a quién arrastrar a la reunión: la mitad de las ventas se pierden por llevar al interlocutor equivocado.",
+	"explica_mal": "Algún perfil está en el momento equivocado. Piensa en qué necesita la venta en cada fase: primero la solución, luego saber si se puede construir, después el precio, antes de firmar el contrato, y al final quien entrega."
+}

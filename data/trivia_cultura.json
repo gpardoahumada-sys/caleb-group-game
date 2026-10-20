@@ -1,0 +1,60 @@
+{
+	"titulo": "Trivia de cultura",
+	"preguntas": [
+		{
+			"pregunta": "Un cliente pregunta qué hace diferente a Caleb Group de cualquier otra consultora. ¿Cuál es la respuesta correcta?",
+			"opciones": [
+				"Tenemos el equipo más grande del mercado",
+				"Se mide el resultado en el negocio del cliente, no las horas entregadas",
+				"Somos más baratos que la competencia",
+				"Trabajamos con las últimas tecnologías"
+			],
+			"correcta": 1,
+			"explica": "El propósito de la casa es convertir la tecnología en una ventaja que se pueda medir. «Somos los mejores» o «somos más baratos» son guerras que no se pueden ganar."
+		},
+		{
+			"pregunta": "¿Cuál de estos NO es una de las cuatro dimensiones que se recorren en el edificio?",
+			"opciones": [
+				"Cultura y estructura de soporte comercial",
+				"Oferta, metodología y valor",
+				"Casos de éxito y armado de propuestas",
+				"Captación de talento y clima laboral"
+			],
+			"correcta": 3,
+			"explica": "Las cuatro son: cultura, oferta, casos de éxito y comité comercial. La captación de talento importa en la empresa, pero no es parte de tu acreditación."
+		},
+		{
+			"pregunta": "El cliente pregunta «¿y esto cómo lo harían?». ¿A quién llevas a esa reunión?",
+			"opciones": [
+				"Preventa",
+				"Arquitectura",
+				"Delivery",
+				"Finanzas"
+			],
+			"correcta": 1,
+			"explica": "Arquitectura valida que lo que prometes se puede construir. Es el perfil que convierte una idea de venta en algo que no explota en la entrega."
+		},
+		{
+			"pregunta": "¿Qué significa que el modelo de trabajo esté «centrado en el cliente»?",
+			"opciones": [
+				"Que el cliente decide el precio",
+				"Que el cliente pone las prioridades y nosotros respondemos del resultado",
+				"Que el cliente gestiona al equipo día a día",
+				"Que se le consulta todo antes de tomar cualquier decisión"
+			],
+			"correcta": 1,
+			"explica": "La célula se organiza sola y responde del resultado; el cliente pone las prioridades, no la coordinación diaria. Confundir esto es lo que hace fracasar los equipos dedicados."
+		},
+		{
+			"pregunta": "Antes de firmar un contrato con datos de pacientes, ¿quién tiene que haber entrado?",
+			"opciones": [
+				"Finanzas",
+				"Preventa",
+				"Legal",
+				"Delivery"
+			],
+			"correcta": 2,
+			"explica": "Legal entra ANTES de firmar, no después: contratos, datos personales, confidencialidad en salud y banca. Lo que se firma sin revisar se paga durante toda la entrega."
+		}
+	]
+}

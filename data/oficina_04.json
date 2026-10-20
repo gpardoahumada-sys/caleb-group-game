@@ -1,0 +1,78 @@
+{
+	"nombre": "Oficina 4 · Comité comercial",
+	"mundo": [1280, 720],
+	"inicio": [250, 580],
+	"suelo": "suelo_oficina.png",
+	"insignia": "acreditacion",
+	"objetivo_hecho": "baja a la Oficina 1 y sal a la calle",
+
+	"alfombras": [
+		{"arte": "alfombra.png", "pos": [640, 420]}
+	],
+
+	"muros": [
+		{"rect": [0, 0, 1280, 64], "lado": "arriba"},
+		{"rect": [0, 656, 1280, 64], "lado": "abajo"},
+		{"rect": [0, 0, 64, 720], "lado": "izquierda"},
+		{"rect": [1216, 0, 64, 720], "lado": "derecha"}
+	],
+
+	"npcs": [
+		{
+			"id": "director_general",
+			"arte": "npc_ejecutivo.png",
+			"pos": [500, 330],
+			"mira": [640, 430],
+			"radio": 118,
+			"verbo": "Hablar",
+			"titulo": "Gerente General",
+			"texto": "«Siéntate. Aquí no se viene a contar lo que sabes, se viene a defender una propuesta delante de gente que va a decir que no.»\n\n[b]Lo que voy a mirar[/b]\nQue no bajes el precio, que sepas cuánto le cuesta al cliente su problema y que no prometas lo que no puedes entregar.\n\n[i]Cuando estés listo, siéntate en la mesa y empieza.[/i]"
+		},
+		{
+			"id": "directora_finanzas",
+			"arte": "npc_mayor.png",
+			"pos": [790, 330],
+			"mira": [640, 430],
+			"radio": 112,
+			"verbo": "Hablar",
+			"titulo": "Directora de Finanzas",
+			"texto": "«Todo lo que me traigas lo voy a poner en una hoja de cálculo. Si no viene con números, no viene.»\n\n[b]Lo que quiero oír[/b]\nCoste del problema hoy, coste de la solución mañana y en cuánto tiempo se cruzan las dos líneas.\n\n[i]Y si me ofreces un descuento para cerrar, desconfío: nadie regala margen.[/i]"
+		},
+		{"id": "paseante_1", "arte": "npc_granate.png", "pos": [300, 300],
+			"pasea": [[300, 560], [300, 300]], "velocidad": 44}
+	],
+
+	"objetos": [
+		{
+			"id": "ascensor",
+			"arte": "ascensor.png",
+			"pos": [190, 150],
+			"puerta": true,
+			"insignia": "",
+			"ir_a": "res://scenes/building/oficina_01.tscn",
+			"verbo": "Bajar",
+			"radio": 128,
+			"titulo": "Ascensor · Oficina 1",
+			"texto_bloqueado": "",
+			"texto_abierto": "Las puertas se abren al lobby."
+		},
+		{
+			"id": "pitch",
+			"arte": "mesa_reunion.png",
+			"pos": [640, 430],
+			"col": [300, 46],
+			"radio": 150,
+			"verbo": "Presentar el pitch",
+			"titulo": "Comité comercial",
+			"trivia": "res://data/pitch_comite.json",
+			"clave": "pitch_comite",
+			"motor": "comite"
+		},
+
+		{"id": "escritorio_1", "arte": "escritorio.png", "pos": [1080, 480], "col": [176, 44]},
+		{"id": "mesa_1", "arte": "mesa_reunion.png", "pos": [1080, 600], "col": [300, 46]},
+		{"id": "planta_1", "arte": "planta.png", "pos": [110, 150], "col": [36, 26]},
+		{"id": "planta_2", "arte": "planta.png", "pos": [1170, 150], "col": [36, 26]},
+		{"id": "planta_3", "arte": "planta.png", "pos": [110, 600], "col": [36, 26]}
+	]
+}

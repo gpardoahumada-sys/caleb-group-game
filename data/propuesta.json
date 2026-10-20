@@ -1,0 +1,36 @@
+{
+	"titulo": "Constructor de propuestas",
+	"instrucciones": "BRIEF: aseguradora mediana. Su app de siniestros tarda 9 segundos en abrir un expediente, y el área de datos no puede cruzar pólizas con siniestros. Quiere ver algo funcionando en 10 semanas y el presupuesto está ajustado.\n\nElige TRES módulos. Con menos, la propuesta no alcanza; con más, se sobredimensiona y el precio se va antes de haber demostrado nada.",
+	"modulos": [
+		{
+			"texto": "Discovery de 3 semanas: dónde se pierden los 9 segundos y qué módulos los causan",
+			"correcto": true
+		},
+		{
+			"texto": "Célula ágil de 4 personas para modernizar el módulo de expedientes, con entrega cada dos semanas",
+			"correcto": true
+		},
+		{
+			"texto": "Pipeline de datos de pólizas y siniestros, con un tablero operativo para el área de negocio",
+			"correcto": true
+		},
+		{
+			"texto": "Reescritura completa del core de seguros desde cero, entregada en 10 semanas",
+			"correcto": false
+		},
+		{
+			"texto": "Auditoría de ciberseguridad de toda la infraestructura corporativa",
+			"correcto": false
+		},
+		{
+			"texto": "Migración de todo el datacenter a la nube, en paralelo al proyecto de expedientes",
+			"correcto": false
+		},
+		{
+			"texto": "Dos programadores junior por horas, sin objetivo definido ni responsable de la entrega",
+			"correcto": false
+		}
+	],
+	"explica_ok": "Es la propuesta que se puede prometer en 10 semanas: entiendes el problema antes de tocar nada, modernizas por partes y le das al negocio los datos que hoy no tiene. Nada que no puedas entregar.",
+	"explica_mal": "Rehacer el core en 10 semanas es imposible y asusta al cliente; migrar todo el datacenter o auditar la infraestructura entera no es el dolor que te han contado, y eso es sobredimensionar; y vender horas sin objetivo no es una propuesta, es mano de obra. Lo que falta, se nota en la demo."
+}

@@ -1,0 +1,129 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/comite.gd" id="1_guion"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_marco"]
+bg_color = Color(0.094, 0.121, 0.161, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.83, 0.635, 0.29, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_caja"]
+content_margin_left = 18.0
+content_margin_top = 12.0
+content_margin_right = 18.0
+content_margin_bottom = 12.0
+bg_color = Color(0.12, 0.16, 0.22, 1)
+border_width_left = 3
+border_color = Color(0.83, 0.635, 0.29, 1)
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+
+[node name="Comite" type="CanvasLayer"]
+layer = 26
+script = ExtResource("1_guion")
+
+[node name="Veladura" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.022, 0.031, 0.045, 0.94)
+
+[node name="Marco" type="Panel" parent="Veladura"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -540.0
+offset_top = -275.0
+offset_right = 540.0
+offset_bottom = 275.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_marco")
+
+[node name="Margen" type="MarginContainer" parent="Veladura/Marco"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 18
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 16
+
+[node name="Columnas" type="VBoxContainer" parent="Veladura/Marco/Margen"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Cabecera" type="Label" parent="Veladura/Marco/Margen/Columnas"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.83, 0.635, 0.29, 1)
+theme_override_font_sizes/font_size = 17
+text = "COMITÉ COMERCIAL"
+
+[node name="Quien" type="Label" parent="Veladura/Marco/Margen/Columnas"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.72, 0.78, 0.86, 1)
+theme_override_font_sizes/font_size = 14
+text = "Gerente General"
+
+[node name="Caja" type="Panel" parent="Veladura/Marco/Margen/Columnas"]
+custom_minimum_size = Vector2(0, 96)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_caja")
+
+[node name="Linea" type="Label" parent="Veladura/Marco/Margen/Columnas/Caja"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 18.0
+offset_top = 12.0
+offset_right = -18.0
+offset_bottom = -12.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.93, 0.95, 0.98, 1)
+theme_override_font_sizes/font_size = 16
+text = "Objeción"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Respuestas" type="VBoxContainer" parent="Veladura/Marco/Margen/Columnas"]
+layout_mode = 2
+theme_override_constants/separation = 7
+
+[node name="Confianza" type="HBoxContainer" parent="Veladura/Marco/Margen/Columnas"]
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="Texto" type="Label" parent="Veladura/Marco/Margen/Columnas/Confianza"]
+custom_minimum_size = Vector2(230, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.72, 0.78, 0.86, 1)
+theme_override_font_sizes/font_size = 13
+text = "Confianza del comité: 0%"
+
+[node name="Barra" type="ProgressBar" parent="Veladura/Marco/Margen/Columnas/Confianza"]
+custom_minimum_size = Vector2(0, 12)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+value = 0.0
+show_percentage = false
+
+[node name="Veredicto" type="Label" parent="Veladura/Marco/Margen/Columnas"]
+custom_minimum_size = Vector2(0, 130)
+layout_mode = 2
+theme_override_font_sizes/font_size = 13
+autowrap_mode = 3

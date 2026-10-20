@@ -1,0 +1,316 @@
+{
+	"nombre": "Distrito corporativo",
+	"mundo": [
+		3300,
+		1660
+	],
+	"inicio": [
+		1450,
+		800,
+		90
+	],
+	"calles_v": [
+		65,
+		1065,
+		2065,
+		3165
+	],
+	"calles_h": [
+		65,
+		765,
+		1535
+	],
+	"ancho_calle": 130,
+	"acerado": 26,
+	"manzanas": [
+		{
+			"rect": [
+				130,
+				130,
+				870,
+				570
+			],
+			"edificios": [
+				{
+					"arte": "bloque.png",
+					"pos": [
+						165,
+						180
+					],
+					"tam": [
+						460,
+						380
+					]
+				},
+				{
+					"arte": "bloque.png",
+					"pos": [
+						640,
+						200
+					],
+					"tam": [
+						420,
+						350
+					]
+				}
+			],
+			"extras": [
+				{
+					"arte": "aparcamiento.png",
+					"pos": [
+						200,
+						600
+					],
+					"tam": [
+						700,
+						90
+					]
+				}
+			],
+			"parterres": [
+				[
+					130,
+					130,
+					870,
+					22
+				]
+			]
+		},
+		{
+			"rect": [
+				1130,
+				130,
+				870,
+				570
+			],
+			"edificios": [
+				{
+					"arte": "torre.png",
+					"pos": [
+						1255,
+						155
+					],
+					"tam": [
+						620,
+						520
+					],
+					"marca": "torre"
+				}
+			],
+			"extras": [],
+			"parterres": [
+				[
+					1130,
+					130,
+					870,
+					22
+				]
+			]
+		},
+		{
+			"rect": [
+				2130,
+				130,
+				870,
+				570
+			],
+			"edificios": [
+				{
+					"arte": "bloque.png",
+					"pos": [
+						2170,
+						175
+					],
+					"tam": [
+						440,
+						360
+					]
+				},
+				{
+					"arte": "bloque.png",
+					"pos": [
+						2640,
+						210
+					],
+					"tam": [
+						400,
+						330
+					]
+				}
+			],
+			"extras": [
+				{
+					"arte": "aparcamiento.png",
+					"pos": [
+						2200,
+						600
+					],
+					"tam": [
+						760,
+						90
+					]
+				}
+			],
+			"parterres": [
+				[
+					2130,
+					130,
+					870,
+					22
+				]
+			]
+		},
+		{
+			"rect": [
+				130,
+				830,
+				870,
+				640
+			],
+			"edificios": [
+				{
+					"arte": "banco.png",
+					"pos": [
+						255,
+						920
+					],
+					"tam": [
+						620,
+						460
+					],
+					"marca": "banco"
+				}
+			],
+			"extras": [
+				{
+					"arte": "aparcamiento.png",
+					"pos": [
+						200,
+						1300
+					],
+					"tam": [
+						700,
+						140
+					]
+				}
+			],
+			"parterres": [
+				[
+					130,
+					830,
+					870,
+					22
+				]
+			]
+		},
+		{
+			"rect": [
+				1130,
+				830,
+				870,
+				640
+			],
+			"edificios": [
+				{
+					"arte": "retail.png",
+					"pos": [
+						1255,
+						920
+					],
+					"tam": [
+						620,
+						460
+					],
+					"marca": "retail"
+				}
+			],
+			"extras": [
+				{
+					"arte": "aparcamiento.png",
+					"pos": [
+						1180,
+						1300
+					],
+					"tam": [
+						760,
+						140
+					]
+				}
+			],
+			"parterres": [
+				[
+					1130,
+					830,
+					870,
+					22
+				]
+			]
+		},
+		{
+			"rect": [
+				2130,
+				830,
+				870,
+				640
+			],
+			"edificios": [
+				{
+					"arte": "salud.png",
+					"pos": [
+						2255,
+						920
+					],
+					"tam": [
+						620,
+						460
+					],
+					"marca": "salud"
+				}
+			],
+			"extras": [
+				{
+					"arte": "aparcamiento.png",
+					"pos": [
+						2200,
+						1300
+					],
+					"tam": [
+						760,
+						140
+					]
+				}
+			],
+			"parterres": [
+				[
+					2130,
+					830,
+					870,
+					22
+				]
+			]
+		}
+	],
+	"marcas": {
+		"torre": {
+			"nombre": "Torre Caleb Group",
+			"verbo": "Entrar en la torre",
+			"ir_a": "res://scenes/building/oficina_01.tscn",
+			"texto": ""
+		},
+		"banco": {
+			"nombre": "FinBank Corp · banca",
+			"verbo": "Ver el cliente",
+			"texto": "[b]CLIENTE 1 · FINBANK CORP[/b]\\n[Banca y finanzas]\\n\\n[b]El dolor[/b]\\nCaídas cada día de pago y un área de datos que no cruza pólizas con siniestros. Tienen un comité que no compra promesas: compra números.\\n\\n[b]Lo que ya sabes de ellos[/b]\\nEs el caso del mural del piso 3: automatización y arquitectura resiliente, 40% menos en tiempos de respuesta. Ese 40% es tu argumento aquí.\\n\\n[i]La negociación con este cliente llega con el Acto 2 completo.[/i]"
+		},
+		"retail": {
+			"nombre": "OmniRetail SA · retail",
+			"verbo": "Ver el cliente",
+			"texto": "[b]CLIENTE 2 · OMNIRETAIL SA[/b]\\n[Retail y logística]\\n\\n[b]El dolor[/b]\\nWeb y tienda física desincronizadas: en campaña venden stock que no existe y cancelan pedidos comprometidos.\\n\\n[b]Lo que ya sabes de ellos[/b]\\nPlataforma unificada de datos con trazabilidad de inventario en tiempo real. Aquí no se vende software: se vende una sola cifra de stock.\\n\\n[i]La negociación con este cliente llega con el Acto 2 completo.[/i]"
+		},
+		"salud": {
+			"nombre": "MediHealth SA · salud",
+			"verbo": "Ver el cliente",
+			"texto": "[b]CLIENTE 3 · MEDIHEALTH SA[/b]\\n[Salud y servicios clínicos]\\n\\n[b]El dolor[/b]\\nFichas clínicas que no se hablan entre sí, filas en admisiones y riesgo real de filtración de datos de pacientes.\\n\\n[b]Lo que ya sabes de ellos[/b]\\nCélula ágil con desarrollo seguro y cumplimiento normativo desde el primer ciclo. Aquí el argumento no es la velocidad: es que no haya hallazgos en la auditoría.\\n\\n[i]La negociación con este cliente llega con el Acto 2 completo.[/i]"
+		}
+	}
+}

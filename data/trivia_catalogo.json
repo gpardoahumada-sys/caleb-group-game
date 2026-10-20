@@ -1,0 +1,82 @@
+{
+	"titulo": "Trivia de portafolio",
+	"preguntas": [
+		{
+			"pregunta": "El cliente quiere empezar ya, pero el alcance todavía no está cerrado. ¿Qué modelo de cobro encaja mejor?",
+			"opciones": [
+				"Precio cerrado por proyecto",
+				"Horas bolsa",
+				"Licencia anual por usuario",
+				"Equipo dedicado a jornada completa"
+			],
+			"correcta": 1,
+			"explica": "Las horas bolsa permiten avanzar sin congelar un alcance que aún no existe. El precio cerrado obliga a definirlo todo antes de empezar."
+		},
+		{
+			"pregunta": "Un área de negocio pide «saber cuánto vendimos ayer en todas las tiendas, en tiempo real». ¿A qué línea del portafolio va?",
+			"opciones": [
+				"Transformación digital y desarrollo a medida",
+				"Gobierno de datos, analítica e IA",
+				"Servicios gestionados",
+				"Células ágiles de staffing"
+			],
+			"correcta": 1,
+			"explica": "Reportes consolidados en tiempo real son gobierno de datos: pipelines, calidad y una capa analítica común. Sin datos unificados no hay tiempo real."
+		},
+		{
+			"pregunta": "¿Qué distingue a una célula ágil de Caleb Group de contratar programadores por hora?",
+			"opciones": [
+				"Sale más barata por hora",
+				"Trabaja con un único lenguaje",
+				"Es un equipo autogestionado con un objetivo y responsabilidad de extremo a extremo",
+				"No necesita al cliente para priorizar"
+			],
+			"correcta": 2,
+			"explica": "Se contrata un resultado, no unas manos. La célula se organiza sola, pero responde del resultado completo y necesita al cliente para priorizar."
+		},
+		{
+			"pregunta": "El cliente tiene el sistema en su propio datacenter, no puede moverlo todo a la nube y le da miedo la continuidad. ¿Qué se ofrece?",
+			"opciones": [
+				"Reescribir la plataforma entera de una vez",
+				"Modernización incremental por servicios, empezando por los de más riesgo",
+				"Contratar más gente para soporte",
+				"Comprar licencias nuevas"
+			],
+			"correcta": 1,
+			"explica": "Incremental y por servicios: cada pieza se moderniza sin parar el negocio. Rehacer todo de golpe es el riesgo operativo que el cliente ya teme."
+		},
+		{
+			"pregunta": "¿Cuándo es correcto ofrecer precio cerrado?",
+			"opciones": [
+				"Siempre: es lo que el cliente prefiere oír",
+				"Cuando el alcance está definido y es estable",
+				"Cuando todavía no sabemos cuánto va a costar",
+				"Solo en proyectos de menos de un mes"
+			],
+			"correcta": 1,
+			"explica": "El precio cerrado es una promesa. Se puede prometer cuando el alcance está cerrado; con el alcance abierto se convierte en un desvío garantizado."
+		},
+		{
+			"pregunta": "¿Cuál es la diferencia entre vender una licencia y vender un servicio gestionado?",
+			"opciones": [
+				"La licencia da derecho a usar el software; el servicio gestionado además lo opera y responde por él con un SLA",
+				"La licencia se cobra por hora y el servicio por resultado",
+				"El servicio gestionado es solo para clientes grandes",
+				"Son lo mismo con distinto nombre comercial"
+			],
+			"correcta": 0,
+			"explica": "La licencia es un derecho de uso; el servicio gestionado es una responsabilidad de operación. Si nadie opera el sistema, el cliente sigue teniendo el problema: eso es lo que se paga en el SLA."
+		},
+		{
+			"pregunta": "El cliente quiere usar el producto sin encargarse de la infraestructura, del soporte ni de las actualizaciones. ¿Qué modelo se le ofrece?",
+			"opciones": [
+				"Precio cerrado por proyecto",
+				"Horas bolsa",
+				"Equipo dedicado",
+				"Suscripción de servicio (SaaS), con la operación y las actualizaciones incluidas"
+			],
+			"correcta": 3,
+			"explica": "Si el cliente no quiere encargarse de nada, se le vende suscripción con operación incluida. El precio cerrado y las horas bolsa le dejan a él la carga de operar y mantener."
+		}
+	]
+}
