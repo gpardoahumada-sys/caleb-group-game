@@ -7,6 +7,14 @@ clientes estratégicos (Acto 2).
 
 Cenital 2D, sin combate: caminar, mirar y decidir.
 
+## Jugar ahora, en el navegador
+
+**https://gpardoahumada-sys.github.io/caleb-group-game/**
+
+No hay que instalar nada: se abre y se juega. En el móvil conviene girarlo a
+horizontal. Controles: **flechas** para andar (en la ciudad, para conducir), **E**
+para interactuar, **1-4** para responder, **F11** pantalla completa.
+
 ---
 
 ## Estado
